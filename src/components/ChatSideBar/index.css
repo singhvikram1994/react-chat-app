@@ -1,0 +1,94 @@
+/**** SideBar Panel ***/
+.left-panel {
+    flex: 1;
+    align-items: stretch;
+    border-right: 1px solid var(--app-inside-border-color);
+ }
+
+/*** CARD ITEM CSS***/
+.card-item {
+    display: flex;
+    height: 105px;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px 5px 5px 40px;
+    transition: all .25s ease;
+    transition-property: box-shadow, transform, border-color;
+}
+
+.card-item.selected {
+    background-color: var(--card-item-selected-color);
+}
+
+.card-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0px 7px 0px var(--user-name-color);
+    border-color: var(--user-name-color);
+}
+
+.card-item .avatar img {
+    border-radius: 50%;
+    height: 75px;
+}
+
+.card-item .profile {
+    width: 80%;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.card-item .profile .name {
+    font-size: 17px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-item .profile .name.one {
+    color: var(--card-item-profile-title-color-one);
+}
+.card-item .profile .name.two {
+    color: var(--card-item-profile-title-color-two);
+}
+
+
+.card-item .profile .preview {
+    color: var(--card-item-profile-text-preview-color);
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 4px;
+}
+
+/*** SEARCH BAR ***/
+.search {
+    position: absolute;
+    top: 10px;
+}
+
+.compose-message {
+    width: 60px !important;
+}
+
+.chat-side-bar-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-side-bar-search .search-box {
+  width: 70%;
+  position: relative;
+  padding-left: 40px;
+}
+
+.chat-side-bar-search .search-box input {
+  border: 0;
+  width: 100%;
+  height: 45px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 39px;
+}

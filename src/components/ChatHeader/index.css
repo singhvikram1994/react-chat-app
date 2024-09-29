@@ -1,0 +1,82 @@
+
+/**** Header Nav - Windows option colors ***/
+.close { background-color: var(--close-circle-color); }
+.minimize { background-color: var(--minimize-circle-color); }
+.maximize { background-color: var(--maximize-circle-color); }
+
+/**** Header Nav - Parent Container ***/
+.chat-header {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: space-between
+}
+
+/**** Header Nav - LEFT Part - [Windows option circle] ***/
+.left {
+    top: 30%;
+    padding-left: 30px;
+    position: relative;
+}
+
+.left span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+/**** Header Nav - Right Part  [User Profile Avatar] ***/
+.user-avatar img {
+    width:40px; 
+    height:40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 16px;
+    color: var(--user-profile-title-color);
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    padding-top: 7px;
+}
+
+.user-profile > div {
+    margin: 12px 4px;
+    display: inline-block;
+}
+
+.down-arrow {
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+}
+
+.user-profile {
+  font-size: 14px;
+  color: var(--chat-message-light-text-color);
+}
+
+.user-profile li {
+  padding: 5px 10px;
+  line-height: 1.5em;
+}
+
+.messages-count {
+  display: inline-block;
+  border: 1px solid var(--app-main-border-color);
+  border-radius: 50%;
+  width: 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 47%;
+  font-size: 11px;
+  background: var(--card-item-profile-text-preview-color);
+  color: var(--white);
+}
